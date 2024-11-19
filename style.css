@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    background-color: wheat;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background-color: rgb(0, 0, 0,0.8);
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;/*this determinds which element is at the top if items overlap*/
+}
+.logo{
+    font-size: 25px;
+    color: aliceblue;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color: orangered;
+    text-shadow:0px 0px 2px rgb(255, 255, 255),
+       0px 0px 2px rgb(255, 255, 255);
+       transform: scale(1.1);
+}
+span{
+    color: orangered;
+}
+.navbar a{
+    font-size: 18px;
+    color: aliceblue;
+    margin: 0px 20px;
+    border-bottom: 3px solid transparent;
+    transition:  0.3s ease;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+#clock{
+    font-size: 18px;
+    color: orangered;
+    transition: .3s ease;
+    font-weight: bolder;
+}
+#clock:hover{
+    text-shadow: 0px 0px 2px aliceblue,
+    0px 0px 2px aliceblue;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+    flex-flow: wrap;
+}
+.img-box img{
+    width: 300px;
+    border-radius: 80%;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px aliceblue,
+    0px 0px 10px orangered;
+    
+}
+.home-content{
+    max-width: 800px;
+}
+.home-content h3{
+font-size: 42px;    
+}
+.home-content h1{
+    font-size: 62px;
+    line-height: 1.2;
+}
+.btn-box{
+    margin-top: 5px;
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+.btn-1{
+margin-top: 15px;
+background-color: transparent;
+width: 90px;
+}
+.btn-2{
+    margin-top: 15px; 
+}
+.btn-1 a{
+    
+    padding: 15px 28px;
+    background-color: black;
+    color: aliceblue;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition:  0.3s ease;
+    cursor: pointer;
+}
+.btn-1 a:hover{
+    background-color: aliceblue;
+    color: orangered;
+    border: 2px solid orangered;
+}
+.btn-2 a{
+    padding: 15px 28px;
+    background-color: black;
+    color: aliceblue;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition:  0.3s ease;
+    cursor: pointer;
+}
+.btn-2:hover a{
+    background-color: aliceblue;
+    color: orangered;
+    border: 2px solid orangered;
+}
+    .about-me-info{
+    width: 100%;
+    min-height: 100vh;
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+    }
+    #about-box h1{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        padding: 30px 20px;
+        font-size: 35px;
+        margin-top: 80px;
+        text-shadow: 0px 0px 10px aliceblue,
+        0px 0px 20px orangered,
+        0px 0px 20px orangered,
+        0px 0px 20px orangered;
+    }
+    #about-box p{
+        font-size: 25px;
+    }
+    
+    .emplyment-container{
+    width: 100%;
+    min-height: 110vh;
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    margin: 30px 0px 10px;
+    padding: 10px 12% ;
+    flex-flow: wrap;
+    }
+    .jobs{
+        padding-top: 30px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+    .employment-box h1{
+        
+        text-decoration: underline;
+    }
+    .emplyment-container p{
+        flex-flow: column;
+    }
+    .document-container{
+        
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    
+    .document-container .document{
+        margin-top: 5px;
+        border: 2px solid black;
+        box-shadow: 0px 0px 10px orangered;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    #date{
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: wheat;
+    }
+    .footer p{
+        background-color: wheat;
+        display: flex;
+        
+    }
+    .elevator-pitch-container{
+        width: 100%;
+    min-height: 110vh;
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    margin: 30px 0px 10px;
+    padding: 10px 12% ;
+    flex-flow: wrap;
+    }
+    .pitch-name{
+
+        text-shadow: 0px 0px 10px aliceblue,
+        0px 0px 20px orangered,
+        0px 0px 20px orangered,
+        0px 0px 20px orangered;
+
+    }
+    .skills-container{
+        width: 100%;
+        min-height: 110vh;
+        background-color: wheat;
+        display: flex;
+        align-items: center;
+        gap: 7em;
+        margin: 30px 0px 10px;
+        padding: 10px 12% ;
+        gap: 40%;
+        flex-flow: wrap;
+    }
+    .skills-name{
+        font-size: 50px;
+        padding-bottom: 10px;
+        text-shadow: 0px 0px 10px aliceblue,
+        0px 0px 20px orangered,
+        0px 0px 20px orangered,
+        0px 0px 20px orangered;
+    }
+    .skills-box ul li{
+        font-size: larger;
+    }
+    .lang-name{
+        width: 10%;
+        font-size: 50px;
+        padding-bottom: 10px;
+        text-shadow: 0px 0px 10px aliceblue,
+        0px 0px 20px orangered,
+        0px 0px 20px orangered,
+        0px 0px 20px orangered;
+        
+    }
+    .languages ul li{
+        width: 50%;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        font-size: larger;
+        
+    }
+    .contact-container{    
+        width: 100%;
+        min-height: 110vh;
+        background-color: wheat;
+        display: flex;
+        align-items: center;
+        gap: 7em;
+        margin: 30px 0px 10px;
+        padding: 10px 12% ;
+        gap: 40%;
+        flex-flow: wrap;
+    }
+    .contact-name{
+        width: 20%;
+        font-size: 50px;
+        padding-bottom: 10px;
+        text-shadow: 0px 0px 10px aliceblue,
+        0px 0px 20px orangered,
+        0px 0px 20px orangered,
+        0px 0px 20px orangered;
+    }
+    .contact-box ul li{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+    }
+    .contact-box ul li span{
+        font-size: larger;
+    }
+
+
+    .other-items{
+        width: 20%;
+        font-size: 50px;
+        padding-bottom: 10px;
+        text-shadow: 0px 0px 10px aliceblue,
+        0px 0px 20px orangered,
+        0px 0px 20px orangered,
+        0px 0px 20px orangered;
+    }
+    .otherlinks ul li{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+    }
+    .otherlinks ul li a{
+        font-size: larger;
+        font-weight: bolder;
+        color: rgb(0, 0, 0);
+        border-bottom: 3px solid transparent;
+         transition:  0.3s ease;
+}
+.otherlinks ul li a:hover,
+.otherlinks ul li a.active{
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+
+@media screen and (max-width: 430px) and (orientation: portrait) {
+    .employment-box{
+        margin-top: 70%;
+    }
+    .document-container .document{
+        width: 100%;
+    }
+    .about-me-info{
+        margin-top: 30%;
+    }
+    .skills-container{
+        margin-top: 20%;
+    }
+    .contact-container{
+        margin-top: 20%;
+    }
+    .home{
+        margin-top: 145px;
+    }
+    .navbar a{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        
+    }
+    .elevator-pitch-container{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 900px) and (orientation: landscape) {
+    
+    .employment-box{
+        margin-top: 25%;
+    }
+    
+    
+    .home{
+        margin-top: 20%;
+    }
+    .navbar a{
+        display: flex;
+        flex-flow: wrap;
+        
+    }
+    .about-me-info{
+        margin-top: 10%;
+    }
+    .elevator-pitch-container{
+        margin-top: 10%;
+    }
+    .skills-container{
+        margin-top: 20%;
+    }
+    .contact-container{
+        margin-top: 20%;
+    }
+}
+
