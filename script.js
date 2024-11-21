@@ -29,6 +29,10 @@ window.onload = todaysDate
 async function getJokes() {
     const response = await fetch('https://official-joke-api.appspot.com/random_joke')
     const data = await response.json();
+    if(response.status === 200){
+        
+    }
+    
     console.log(data)
     alert(data.setup);
     setInterval(alert(data.punchline), 5000)
